@@ -3,9 +3,11 @@
 {% block content %}
     <h1>{% block title %} Messages {% endblock %}</h1>
     {% for message in messages %}
-        <div class='message'>
-            <h3>{{ message['title'] }}</h3>
-            <p>{{ message['content'] }}</p>
-        </div>
+        {% if name == message['sender'] or viewAll == 'Yep' %}
+            <div class='message'>
+                <h3>{{ message['title'] }}  -  {{ message['sender']}}</h3>
+                <p>{{ message['content'] }}</p>
+            </div>
+        {% endif  %}
     {% endfor %}
 {% endblock %}

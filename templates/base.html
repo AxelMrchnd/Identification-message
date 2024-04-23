@@ -27,9 +27,9 @@
 </head>
 <body>
     <nav>
-        <a href="{{ url_for('index') }}">FlaskApp</a>
-        <a href="{{ url_for('create_with_id', name='x') }}">Create</a>
-        <a href="#">About</a>
+        <a href="{{ url_for('index', name=name, viewAll='Yep') }}">View All</a>
+        <a href="{{ url_for('index', name=name, viewAll='Iie')}}">My Message</a>
+        <a href="{{ url_for('create_with_id', name=name) }}">Create</a>
     </nav>
     <hr>
     <div class="content">
