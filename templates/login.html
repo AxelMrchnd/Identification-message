@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>You aren't log because:</h1>
+{% if error %}
+  <h1>{{ error }}!</h1>
+{% else %}
+  <h1>Unknown</h1>
+{% endif %}
+</body>
+</html>
