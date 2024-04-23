@@ -46,5 +46,5 @@ def create_with_id():
             messages.append({'title': title, 'content': content, 'sender': name, 'date': "datesystème"})
             print('Title & Content')
             return redirect(url_for('index', name=name, viewAll='Iie'))
-    print('Get')
+    print('Get fait')
     return render_template('create.html', name=name)
