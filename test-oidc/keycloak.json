@@ -1,0 +1,13 @@
+{
+    "web": {
+        "issuer": "http://127.0.0.1:8080/realms/kc-users/",
+        "auth_uri": "http://127.0.0.1:8080/realms/kc-users/protocol/openid-connect/auth",
+        "client_id": "py-messages",
+        "client_secret": "4c1UxI9WUUO4RvgGNgtSmzRicA2VOCDP",
+        "redirect_uris": [
+            "http://12.0.0.1:5000/"
+        ],
+        "token_uri": "http://127.0.0.1:8080/realms/kc-users/protocol/openid-connect/token",
+        "token_introspection_uri": "http://127.0.0.1:8080/realms/kc-users/protocol/openid-connect/token/introspect"
+    }
+}
