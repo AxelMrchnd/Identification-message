@@ -5,8 +5,16 @@
     {% for message in messages %}
         {% if name == message['sender'] or viewAll == 'Yep' %}
             <div class='message'>
-                <h3>{{ message['title'] }}  -  {{ message['sender']}}</h3>
-                <p>{{ message['content'] }}</p>
+                <form method="post">
+                    <h3>{{ message['title'] }}  -  {{ message['sender'] }}</h3>
+                    <p class="contentMessage">{{ message['content'] }}</p>
+                    {% if name == message['sender'] %}
+                        <button type="submit">Modify</button>
+                    {% endif  %}
+                    <p class="small">
+                        {{ message['date'] }}, ID: {{ message['n°ID'] }}<input type="hidden" name="ID" value="{{ message['n°ID'] }}">
+                    </p>
+                </form>
             </div>
         {% endif  %}
     {% endfor %}

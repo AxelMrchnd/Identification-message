@@ -1,0 +1,4 @@
+
+== Use case de consultation
+
+image::consulterLesMessages-gen.svg[]

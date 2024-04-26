@@ -1,0 +1,23 @@
+@startuml Idp-with-logo
+!include my-spirite.puml
+!include skinparam.puml
+
+participant "<$user>\n User" as user
+participant "<$g-chrome>\n Browser" as browser
+participant "<$python>\n Web Service" as serverAPP
+participant "<$python>\n Dico Messages" as dico
+
+autonumber
+
+
+activate user
+user -> browser: accesURL
+activate browser
+browser -> serverAPP: requeteHttp
+activate serverAPP
+
+return redirectHttpIDP
+return pageHtml
+
+
+@enduml

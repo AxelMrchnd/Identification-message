@@ -1,0 +1,21 @@
+= Prérequis
+
+== Installation poste dev :
+
+* PyCharm
+* Git
+* IDP / Keycloak
+
+=== IDP
+
+Téléchargement de Keycloak pui d'un JRE Eclipse Témurin
+
+Lancement de Keycloak
+
+ \Keycloak\keycloak-24.0.3\bin> .\kc.bat start-dev
+
+ - Création de l'utilisateur admin au démarrage sur l'URL : http://127.0.0.1:8080
+ - Création d'un realm : kc-users
+ - Création client : c'est un application web nous allons appelé notre client OIDC : py-messages
+
+Comment récupére un nom d'utilisateur avec Flask en Python en passant par keycloak. (realm: kc-users, client OIDC: py-messages)

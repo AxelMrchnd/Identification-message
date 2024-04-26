@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor "Message User" as fc
+rectangle Restaurant {
+  usecase "Lire les messages" as UC1
+  usecase "Lire les messages d'un utilisateur" as UC2
+  usecase "Ecrire un message" as UC3
+  usecase "Modifier un message" as UC4
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+@enduml
